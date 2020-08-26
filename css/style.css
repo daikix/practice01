@@ -1,0 +1,45 @@
+/* 共通インナー */
+.common-inner{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.photo-work{
+  display: flex
+}
+
+.photo-work_image{
+  width: 480px;
+  margin-right: 20px
+}
+
+.photo-work_text{
+  font-size: 1.6rem
+}
+
+.page-header{
+  background-color: #5A442A
+}
+
+.page-header__inner{
+  padding: 24px 0;
+}
+
+.page-header__title{
+  color: #ffffff;
+  line-height: 1.0;
+  font-weight: normal;
+}
+
+
+.page-header__title .large{
+  font-size: 3.2rem;
+}
+
+.page-header__title .small{
+  font-size: 2.0rem;
+}
+
+.page-header__main-visual{
+  width: 100%
+}
