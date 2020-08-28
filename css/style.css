@@ -1,45 +1,187 @@
-/* 共通インナー */
-.common-inner{
-  width: 960px;
+body{
+  background-image: url(../img/background.jpg);
+  font-size: 15px;
+}
+
+.large{
+  font-size: 2rem;
+}
+
+.common{
+  width: 1200px;
   margin: 0 auto;
+  background-color: rgba(255,255,255,0.7);
 }
 
-.photo-work{
-  display: flex
-}
-
-.photo-work_image{
-  width: 480px;
-  margin-right: 20px
-}
-
-.photo-work_text{
-  font-size: 1.6rem
+.title-common{
+  width: 626px;
+  font-size: 1rem;
+  padding-left: 10px;
+  display: block;
+  margin: 10px auto;
+  font-family: "游ゴシック";
+  transition: all 500ms ease-in-out
 }
 
 .page-header{
-  background-color: #5A442A
+  padding: 20px 0;
 }
 
-.page-header__inner{
-  padding: 24px 0;
+.page-header .common{
+  height: 100px;
+  /* 右影　左影　ぼかし距離 */
+  box-shadow: 5px 5px 5px;
+  color: #000000;
+  position: relative;
 }
 
-.page-header__title{
-  color: #ffffff;
-  line-height: 1.0;
-  font-weight: normal;
+.page-header-title h1{
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-
-.page-header__title .large{
-  font-size: 3.2rem;
+.page-header-memu{
+  display: flex;
 }
 
-.page-header__title .small{
-  font-size: 2.0rem;
+.page-header-memu .history{
+  font-size: 1.2em;
+  font-family: "游ゴシック";
+  font-weight: 700;
 }
 
-.page-header__main-visual{
-  width: 100%
+.page-header-memu .history a{
+  color: red;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.page-header-memu .now-job{
+  font-size: 1.2em;
+  font-family: "游ゴシック";
+  font-weight: 700;
+}
+
+.page-header-memu .now-job a{
+  color: red;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.page-header-memu .hobby{
+  font-size: 1.2em;
+  font-family: "游ゴシック";
+  font-weight: 700;
+}
+
+.page-header-memu .hobby a{
+  color: red;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.page-main{
+  padding: 20px 0
+}
+
+.page-main_mainvisual-img{
+  margin-top: 50px;
+}
+.page-main_mainvisual-img img{
+  display: block;
+  margin-left: 100px;
+}
+
+.page-main-content-title_1,
+.page-main-content-title_2{
+  margin-top: 50px;
+}
+
+.page-main-content-title_1 h1{
+  border-left: solid 5px #0000ff;
+  box-shadow: 0 2px 10px #000000;
+  margin-left: 100px;
+}
+
+.page-main-content-title_1 h1:hover{
+  background-color: #0000ff;
+  color: #fff;
+  border-left: solid 5px #fff;
+}
+
+.page-main-content-title_2 h1{
+  border-left: solid 5px #ff0000;
+  box-shadow: 0 2px 10px #000000;
+  margin-left: 100px;
+}
+
+.page-main-content-title_2 h1:hover{
+  background-color: #ff0000;
+  color: #fff;
+  border-left: solid 5px #fff;
+}
+
+.page-main-content-article p{
+  width: 626px;
+  display: block;
+  margin-left: 100px;
+  font-family: "游ゴシック";
+  line-height: 2em;
+}
+
+.page-main-content-article .DUBFIRE{
+  background: linear-gradient(90deg, #E4A972, #9941D8);
+  padding: 5px 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-family: "游ゴシック";
+  height: 22px;
+  border-radius: 3px;
+  transition: all 0.5s ease
+}
+
+.page-main-content-article .DUBFIRE:hover{
+  background: linear-gradient(-90deg, #E4A972, #9941D8);
+}
+
+.page-main-content-example{
+  width: 626px;
+  display: block;
+  margin-left: 100px;
+  font-family: "游ゴシック";
+  position: relative;
+}
+
+.page-main-content-example ul{
+  list-style-image: url(../img/lst_icon.png);
+}
+
+.tetris-img{
+  margin-bottom: 20px
+}
+
+.tetris-img img{
+  height: 400px;
+  margin-left: 100px;
+}
+
+.tetris-img img:hover{
+  border: groove 1px #0000ff;
+}
+
+.button-img{
+  margin-bottom: 20px
+}
+
+.button-img img{
+  height: 400px;
+  margin-left: 100px;
+}
+
+.button-img img:hover{
+  border: groove 1px #0000ff;
 }
