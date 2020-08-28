@@ -3,36 +3,82 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/reset_costum.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>廃 -  before the time comes  -</title>
+    <title>これはテストサイトです。</title>
   </head>
   <body>
-    <!-- ヘッダー -->
-    <header class="page-header">
-      <div class="page-header__inner common-inner">
-        <h1 class="page-header__title">
-          <span class="large">廃</span><span class="small">-  before the time comes  -</span>
-        </h1>
-      </div>
-      <div class="page-header__main-visual">
-        <img src="./img/mainvisual.jpg" alt="メインビジュアル">
-      </div>
-    </header>
+    <section>
+      <header class="page-header">
+        <div class="common">
+          <div class="page-header-title">
+            <h1>
+              ここは私の自己紹介サイトです
+            </h1>
+          </div>
+          <div class="page-header-memu">
+            <div class="history">
+              <a href="#" id="history">職務経歴</a>
+            </div>
+            <div class="now-job">
+              <a href="#" id="now-job">現職について</a>
+            </div>
+            <div class="hobby">
+              <a href="#" id="hobby">趣味について</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
 
-    <!-- メインコンテンツ -->
-    <main class="main-content">
-      <div class="common-inner">
-
-      </div>
-    </main>
-
-      <!-- フッター -->
-      <footer class="page-footer">
-
-      </footer>
-
-
+    <main class="page-main common">
+      <section>
+        <div class="page-main_mainvisual-img">
+          <img src="./img/mainvisual.jpg" alt="メインビジュアル">
+        </div>
+        <div class="page-main-content-title_1">
+          <h1 class="title-common">フロントエンドエンジニア/Webディレクターに挑戦したい</h1>
+        </div>
+        <div class="page-main-content-article">
+          <p>
+            私は最初自分の趣味のためにHTML/CSS/JavaScriptの勉強を始めました。<br>
+            勉強を進めてくうちに段々とこの分野に自分が惹かれていくのが分かりました。<br>
+            そしてあるサイトに辿り着き、私の気持ちを大きく動かしました。<br>
+            「この分野を仕事にしたい」「こんなサイトを作れるようになりたい」<br>
+            そう思わせてくれたのです。そのサイトというのが
+            <a href="http://www.dubfire.com/home/" class="DUBFIRE" id="DUBEFIREbtn">DUB FIRE</a>
+            というサイトです。<br>
+            ゆくゆくはこのサイトのようなスタイリッシュなWebサイトをも作れる<br>
+            フロントエンドエンジニアになりたいと思っています。
+          </p>
+        </div>
+        </section>
+        <section>
+          <div class="page-main-content-title_2">
+            <h1 class="title-common">こんなものが作れます！</h1>
+          </div>
+          <div class="page-main-content-example">
+            <ul>
+              <li>ゲーム</li>
+              <p>
+                以前に作成した疑似テトリスゲームです。<br>
+                キーボード矢印キーで移動/回転などの操作が可能です。<br>
+                (下記画像クリックでサイトにジャンプします。)
+              </p>
+              <div class="tetris-img">
+                <a href="https://daikix.github.io" target="_blank"><img src="./img/tetris.jpg" alt="テトリスゲーム画面"></a>
+              </div>
+              <li>ボタンデザイン</li>
+              <p>
+                Webサイトで使えそうなボタンを作成しました。<br>
+                (下記画像クリックでサイトにジャンプします。)
+              </p>
+              <div class="button-img">
+                <a href="./button-samlpe.html" target="_blank"><img src="./img/button_sample_page.PNG" alt="ボタンサンプルページの画像"></a>
+              </div>
+            </ul>
+          </div>
+        </section>
+      </main>
+    <script type="text/javascript" src="./js/main_home.js"></script>
   </body>
 </html>
