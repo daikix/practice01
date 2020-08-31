@@ -193,3 +193,57 @@ a{
   border-radius: 4px;
   font-weight: 800;
 }
+
+.menu_sample{
+  position: relative;
+}
+
+.common{
+  display: block;
+  height: 80px;
+  width: 150px;
+  line-height: 80px;
+  text-align: right;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+  position: absolute;
+  left: -30px;
+  transition: all 0.5s ease-in-out;
+  padding-right: 15px;
+  opacity: 0.5;
+}
+
+.menu1{
+  background: #FF0000
+}
+
+.menu1:hover{
+  width: 300px;
+  opacity: 1.0;
+}
+
+.menu1_aftertxt{
+  background: #0000ff
+}
+
+.menu2{
+  background: #00FF00;
+  top: 90px;
+}
+
+.menu2:hover{
+  width: 300px;
+  opacity: 1.0;
+}
+
+.menu3{
+  background: #0000FF;
+  top: 180px;
+}
+
+.menu3:hover{
+  width: 300px;
+  opacity: 1.0;
+}
