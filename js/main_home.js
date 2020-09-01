@@ -21,7 +21,7 @@ setInterval(function(){
 function showElement(){
   if(body.classList.contains("open")){
     let element = document.getElementsByClassName("js-fadein");
-    let showTiming = window.innerHeight > 1000 ? 200:40;
+    let showTiming = window.innerHeight > 768 ? 380:40;
     let scrollY = window.pageYOffset;
     let windowH = window.innerHeight;
 
