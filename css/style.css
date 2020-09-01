@@ -1,3 +1,7 @@
+html{
+  font-size: 20px;
+}
+
 body{
   background-image: url(../img/background.jpg);
   font-size: 15px;
@@ -6,6 +10,7 @@ body{
 .large{
   font-size: 2rem;
 }
+
 
 .common{
   width: 1200px;
@@ -71,6 +76,28 @@ body{
   margin-left: 50px;
 }
 
+.hobby{
+  position: relative;
+}
+
+.newicon{
+  position: absolute;
+  background: #ff0000;
+  color: #fff;
+  font-weight: 800;
+  width: 35px;
+  height: 15px;
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 15px;
+  transform: translate(160px,-30px);
+}
+
+.blink{
+  background: #fff;
+  color: #ff0000;
+}
+
 .page-header-memu .hobby{
   font-size: 1.2em;
   font-family: "游ゴシック";
@@ -129,7 +156,7 @@ body{
   display: block;
   margin-left: 100px;
   font-family: "游ゴシック";
-  line-height: 2em;
+  line-height: 2rem;
 }
 
 .page-main-content-article .DUBFIRE{
@@ -178,7 +205,7 @@ body{
 }
 
 .button-img img{
-  height: 400px;
+  height: 300px;
   margin-left: 100px;
 }
 
@@ -201,10 +228,10 @@ body{
 }
 
 .hobby_disc{
-  position: fixed;
+  position: absolute;
   margin: 0 auto;
-  width: 75%;
-  height: 600px;
+  width: 75vw;
+  height: 2000px;
   z-index: 200;
   background: #fff;
   opacity: 0;
@@ -222,4 +249,60 @@ body{
 .open .hobby_disc{
   opacity: 0.8;
   visibility: visible;
+}
+
+.wall_img,
+.hbb_img,
+.trump,
+.caruta{
+  display: flex;
+}
+
+#wall2,
+#amp,
+#trump2,
+#caruta2{
+  padding-left: 20px
+}
+
+.js-fadein{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+
+.is-show.js-fadein{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.js-fadein img{
+  height: 300px
+}
+
+.aside{
+  border: groove 3px #000000;
+  background: rgba(0,0,0,0.2);
+  position: fixed;
+  width: 380px;
+  height: 220px;
+  top: 218px;
+  left: 900px;
+}
+
+.self-introduce img{
+  position: absolute;
+  padding: 20px 20px;
+
+}
+
+.self-introduce-disc{
+  position: absolute;
+  top: -10px;
+  left: 120px;
+  font-weight: 700;
+  font-family: "游ゴシック";
+  padding: 20px 20px;
 }
