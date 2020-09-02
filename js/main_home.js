@@ -4,7 +4,7 @@ let hobby = document.getElementById("hobby");
 let back = document.getElementById("hobby_back");
 let newicon = document.getElementById("newicon");
 let body = document.body;
-history.addEventListener('click',popup,false);
+history.addEventListener('click',alert(window.innerWidth),false);
 nowjob.addEventListener('click',popup,false);
 hobby.addEventListener('click',function(){
   body.classList.add("open");
