@@ -69,6 +69,14 @@ body{
   font-size: 1.6rem;
   margin: 0 auto;
 }
+@media screen and (max-width:480px){
+  .page-header-title{
+    width: auto;
+    line-height: auto;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+}
 .page-header-memu{
   display: flex;
 }
