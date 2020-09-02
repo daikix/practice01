@@ -34,7 +34,7 @@ setInterval(function(){
 function showElement(){
   if(body.classList.contains("open")){
     let element = document.getElementsByClassName("js-fadein");
-    let showTiming = window.innerHeight > 768 ? 350 : 40;
+    let showTiming = window.innerHeight > 768 ? 500 : 40;
 
     for(let i=0;i<element.length;i++){
       let elemClientRect = element[i].getBoundingClientRect();
