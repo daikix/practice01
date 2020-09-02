@@ -1,41 +1,32 @@
 /* --------共通デザイン-------- */
 html{
   font-size: 62.5%;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -o-text-size-adjust: 100%;
 }
-/******PC用デザイン*******/
 body{
   background-image: url(../img/background.jpg);
   width: 1500px;
   margin: 0 auto;
 }
-.large{
-  font-size: 2rem;
-}
-.common{
-  width: 80%;
-  margin: 0 auto;
-  background-color: rgba(255,255,255,0.7);
-}
-
-/******スマホ用デザイン******/
+/******スマホ用******/
 @media screen and (max-width:480px){
   body{
     background-image: url(../img/background.jpg);
     width: 400px;
     margin: 0 auto;
   }
-  .common{
-    width: 90%;
-    margin: 0 auto;
-    background-color: rgba(255,255,255,0.7);
-  }
+}
+.common{
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.7);
 }
 
 /*--------new icon--------*/
+.newicon.blink{
+  background: #fff;
+  color: #ff0000;
+}
+/******PC用******/
 .newicon{
   position: absolute;
   background: #ff0000;
@@ -48,15 +39,29 @@ body{
   line-height: 15px;
   transform: translate(160px,-30px);
 }
-.newicon.blink{
-  background: #fff;
-  color: #ff0000;
+/******スマホ用******/
+@media screen and (max-width:480px){
+  .newicon{
+    position: absolute;
+    background: #ff0000;
+    color: #fff;
+    font-weight: 800;
+    width: 35px;
+    height: 15px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 15px;
+    transform: translate(90px,-27px);
+  }
 }
+
 
 /*--------ヘッダーデザイン--------*/
 .page-header{
   padding: 20px 0;
 }
+
+/******PC用******/
 .page-header .common{
   height: 100px;
   box-shadow: 5px 5px 5px;
@@ -64,26 +69,17 @@ body{
   position: relative;
 }
 .page-header-title{
-  width: 500px;
-  line-height: 100px;
-  font-size: 1.6rem;
+  width: auto;
+  display: block;
   margin: 0 auto;
-}
-@media screen and (max-width:480px){
-  .page-header-title{
-    width: auto;
-    line-height: auto;
-    font-size: 10px;
-    margin: 0 auto;
-  }
-}
-.page-header-memu{
-  display: flex;
+  font-size: 1.6rem;
+  padding-top: 10px;
 }
 .page-header-memu{
   font-size: 2rem;
   font-family: "游ゴシック";
   font-weight: 700;
+  display: flex;
 }
 .page-header-memu .history a,
 .page-header-memu .now-job a,
@@ -92,6 +88,37 @@ body{
   text-decoration: none;
   margin-left: 40px;
 }
+
+/******スマホ用******/
+@media screen and (max-width:480px){
+  .page-header .common{
+    height: 80px;
+    box-shadow: 5px 5px 5px;
+    color: #000000;
+    position: relative;
+  }
+  .page-header-title{
+    width: auto;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 10px;
+  }
+  .page-header-memu{
+    font-size: 1.2rem;
+    font-family: "游ゴシック";
+    font-weight: 700;
+    display: flex;
+  }
+  .page-header-memu .history a,
+  .page-header-memu .now-job a,
+  .page-header-memu .hobby a{
+    color: red;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+}
+
 .hobby_back{
   position: fixed;
   left: 0;
@@ -154,12 +181,18 @@ body{
 }
 
 /*--------メインコンテンツデザイン---------*/
+/******PC用******/
 .page-main{
   padding: 20px 0
 }
 .page-main_mainvisual-img img{
   display: block;
   margin-top: 50px;
+  margin-left: 100px;
+}
+.page-main-content-title_1 h1{
+  border-left: solid 5px #0000ff;
+  box-shadow: 0 2px 10px #000000;
   margin-left: 100px;
 }
 .page-main-content-title-common{
@@ -171,26 +204,6 @@ body{
   transition: all 500ms ease-in-out;
   margin-top: 50px;
 }
-.page-main-content-title_1 h1{
-  border-left: solid 5px #0000ff;
-  box-shadow: 0 2px 10px #000000;
-  margin-left: 100px;
-}
-.page-main-content-title_1 h1:hover{
-  background-color: #0000ff;
-  color: #fff;
-  border-left: solid 5px #fff;
-}
-.page-main-content-title_2 h1{
-  border-left: solid 5px #ff0000;
-  box-shadow: 0 2px 10px #000000;
-  margin-left: 100px;
-}
-.page-main-content-title_2 h1:hover{
-  background-color: #ff0000;
-  color: #fff;
-  border-left: solid 5px #fff;
-}
 .page-main-content-article p,
 .page-main-content-example p{
   width: 600px;
@@ -198,7 +211,102 @@ body{
   font-family: "游ゴシック";
   line-height: 3rem;
   font-size: 1.5rem;
+}
+.page-main-content-article p{
   margin-left: 100px;
+}
+.page-main-content-title_2 h1{
+  border-left: solid 5px #ff0000;
+  box-shadow: 0 2px 10px #000000;
+  margin-left: 100px;
+}
+.page-main-content-example ul li{
+  margin-left: 100px;
+  font-size: 1.5rem;
+}
+.tetris-img-box,
+.button-img-box{
+  display: block;
+  height: 400px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.button-img img{
+  height: 400px;
+  transition: all .8s ease-in-out;
+}
+
+/******スマホ用******/
+@media screen and (max-width:480px){
+  .page-main{
+    padding: 10px 0
+  }
+  .page-main_mainvisual-img img{
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 320px;
+  }
+  .page-main-content-title_1 h1{
+    border-left: solid 5px #0000ff;
+    box-shadow: 0 2px 10px #000000;
+    margin-left: 20px;
+  }
+  .page-main-content-title-common{
+    width: 310px;
+    font-size: 1.1rem;
+    padding: 5px;
+    display: block;
+    font-family: "游ゴシック";
+    transition: all 500ms ease-in-out;
+    margin-top: 20px;
+  }
+  .page-main-content-article p,
+  .page-main-content-example p{
+    width: auto;
+    display: block;
+    font-family: "游ゴシック";
+    line-height: 1.7rem;
+    font-size: 1rem;
+  }
+  .page-main-content-article p{
+    margin-left: 20px;
+  }
+  .page-main-content-title_2 h1{
+    border-left: solid 5px #ff0000;
+    box-shadow: 0 2px 10px #000000;
+    margin-left: 20px;
+  }
+  .page-main-content-example ul li{
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  .tetris-img-box,
+  .button-img-box{
+    display: block;
+    height: 400px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    left: -100px
+  }
+  .button-img-box{
+    width:  300px;
+  }
+  .button-img img{
+    transition: all .8s ease-in-out;
+  }
+}
+.page-main-content-title_1 h1:hover{
+  background-color: #0000ff;
+  color: #fff;
+  border-left: solid 5px #fff;
+}
+.page-main-content-title_2 h1:hover{
+  background-color: #ff0000;
+  color: #fff;
+  border-left: solid 5px #fff;
 }
 .page-main-content-article .DUBFIRE{
   background: linear-gradient(90deg, #E4A972, #9941D8);
@@ -217,17 +325,6 @@ body{
 .page-main-content-example ul{
   list-style-image: url(../img/lst_icon.png);
 }
-.page-main-content-example ul li{
-  margin-left: 100px;
-  font-size: 1.5rem;
-}
-.tetris-img-box{
-  display: block;
-  height: 400px;
-  margin-left: 100px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
 .tetris-img img{
   height: 400px;
   transition: all .8s ease-in-out
@@ -235,22 +332,12 @@ body{
 .tetris-img img:hover{
   transform: scale(1.2,1.2);
 }
-.button-img-box{
-  display: block;
-  height: 400px;
-  margin-left: 100px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.button-img img{
-  height: 400px;
-  transition: all .8s ease-in-out;
-}
 .button-img img:hover{
   transform: scale(1.2,1.2);
 }
 
 /*---------サイドコンテンツ--------*/
+/******PC用******/
 .self-intro-aside{
   border: groove 3px #000000;
   background: rgba(0,0,0,0.2);
@@ -272,6 +359,18 @@ body{
   font-weight: 700;
   font-family: "游ゴシック";
   font-size: 1.5rem;
+}
+/******スマホ用******/
+@media screen and (max-width:480px){
+  .self-intro-aside{
+    display: none;
+  }
+  .self-introduce img{
+    display: none;
+  }
+  .self-introduce-disc{
+    display: none;
+  }
 }
 
 /*--------フッター--------*/
