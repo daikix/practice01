@@ -1,12 +1,7 @@
 /* --------共通デザイン-------- */
 html{
   font-size: 62.5%;
-}
-
-@media screen and (max-width:480px){
-  html{
-    font-size: 10px;
-  }
+  text-size-adjust: 100%;
 }
 /******PC用デザイン*******/
 body{
