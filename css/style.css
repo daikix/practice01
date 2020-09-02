@@ -1,7 +1,7 @@
 /* --------共通デザイン-------- */
 html{
   font-size: 62.5%;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 /******PC用デザイン*******/
 body{
@@ -50,6 +50,7 @@ body{
   width: 500px;
   line-height: 100px;
   font-size: 1.6rem;
+  margin: 0 auto;
 }
 .page-header-memu{
   display: flex;
